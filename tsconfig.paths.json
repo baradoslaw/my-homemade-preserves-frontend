@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "types": [
+        "../my-homemade-preserves-express-backend/types"
+      ]
+    }
+  }
+}
