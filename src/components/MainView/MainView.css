@@ -1,0 +1,10 @@
+.wrapper {
+    height: calc(100vh - 50px);
+    background-color: cyan;
+}
+
+main {
+    margin: 0 100px;
+    height: 100%;
+    background-color: darkcyan;
+}

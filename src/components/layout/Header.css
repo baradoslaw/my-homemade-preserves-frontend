@@ -1,0 +1,28 @@
+header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: cornsilk;
+}
+
+header div {
+    height: 100%;
+    display: inline-block;
+}
+
+.logo {
+    width: 25%;
+    background-color: aquamarine;
+}
+
+.btnWrapper {
+    width: 50%;
+    max-width: 600px;
+    display: flex;
+    justify-content: right;
+}
+
+.btn {
+    width: 20%;
+    background-color: bisque;
+}
