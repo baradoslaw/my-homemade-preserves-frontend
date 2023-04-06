@@ -1,5 +1,5 @@
 header {
-    height: 50px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     background-color: cornsilk;
@@ -8,11 +8,6 @@ header {
 header div {
     height: 100%;
     display: inline-block;
-}
-
-.logo {
-    width: 25%;
-    background-color: aquamarine;
 }
 
 .btnWrapper {
