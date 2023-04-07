@@ -2,9 +2,10 @@ import React, {SyntheticEvent, useContext, useState} from "react";
 
 import './Register.css';
 import {AppContext} from "../../contexts/app.context";
+import {CloseBtn} from "../common/CloseBtn";
 
 export const Register = () => {
-  const {appContext, setAppContext} = useContext(AppContext);
+  const {appContext} = useContext(AppContext);
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     login: '',
@@ -134,6 +135,9 @@ export const Register = () => {
           type="submit"
           value="Zarejestruj"
         />
+      </p>
+      <p className="btn-register-wrapper">
+        <CloseBtn/>
       </p>
     </form>
   );
