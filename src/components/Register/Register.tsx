@@ -1,8 +1,10 @@
-import React, {SyntheticEvent, useState} from "react";
+import React, {SyntheticEvent, useContext, useState} from "react";
 
 import './Register.css';
+import {AppContext} from "../../contexts/app.context";
 
 export const Register = () => {
+  const {appContext, setAppContext} = useContext(AppContext);
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     login: '',
@@ -51,7 +53,7 @@ export const Register = () => {
   }
 
   return (
-    <form action="" className="register-form" onSubmit={register}>
+    <form action="" className="register-form" onSubmit={register} style={{display: appContext === 'registering' ? 'block' : 'none'}}>
       <h2>Rejestracja</h2>
       <p>
         <label>

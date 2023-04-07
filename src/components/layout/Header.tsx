@@ -10,7 +10,7 @@ export const Header = () => {
       <Logo/>
       <div className="btnWrapper">
         <div className="btn">Zaloguj</div>
-        <HeaderBtn text="Zarejestruj"/>
+        <HeaderBtn text="Zarejestruj" btnType="registering"/>
       </div>
     </header>
   );
