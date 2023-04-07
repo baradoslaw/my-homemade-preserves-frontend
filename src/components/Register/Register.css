@@ -1,0 +1,60 @@
+.register-form {
+    padding: 50px;
+    border: 5px solid burlywood;
+    border-radius: 10%;
+    position: fixed;
+    left: 30%;
+    right: 30%;
+    top: 15%;
+    width: 40%;
+    height: 70%;
+    background-color: bisque;
+}
+
+.register-form h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.register-form div {
+    margin-top: 10px;
+    bottom: 10px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.label-name {
+    width: 25%;
+    text-align: left;
+}
+
+.label-field {
+    width: 75%;
+    text-align: right;
+}
+
+.register-form input {
+    width: 250px;
+    height: 20px;
+}
+
+.btn-register-wrapper {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.btn-register-wrapper .btn-register {
+    margin-right: 50px;
+    border: 2px solid coral;
+    border-radius: 5%;
+    height: 40px;
+    width: 150px;
+    background-color: burlywood;
+    font-size: 15px;
+}
+
+.btn-register-wrapper .btn-register:active {
+    background-color: #dc9947;
+    border-color: #f15518;
+}
