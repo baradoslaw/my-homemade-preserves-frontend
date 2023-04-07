@@ -56,89 +56,89 @@ export const Register = () => {
   return (
     <form action="" className="register-form" onSubmit={register} style={{display: appContext === 'registering' ? 'block' : 'none'}}>
       <h2>Rejestracja</h2>
-      <p>
+      <div>
         <label>
-          <div className="label-name">Login:</div>
-          <div className="label-field"><input
+          <p className="label-name">Login:</p>
+          <p className="label-field"><input
             type="text"
             name="login"
             required
             maxLength={20}
             value={form.login}
             onChange={e => updateForm('login', e.target.value)}
-          /></div>
+          /></p>
         </label>
-      </p>
-      <p>
+      </div>
+      <div>
         <label>
-          <div className="label-name">Hasło:</div>
-          <div className="label-field"><input
+          <p className="label-name">Hasło:</p>
+          <p className="label-field"><input
             type="password"
             name="pwd"
             required
             maxLength={20}
             value={form.pwd}
             onChange={e => updateForm('pwd', e.target.value)}
-          /></div>
+          /></p>
         </label>
-      </p>
-      <p>
+      </div>
+      <div>
         <label>
-          <div className="label-name">Potwierdź hasło:</div>
-          <div className="label-field"><input
+          <p className="label-name">Potwierdź hasło:</p>
+          <p className="label-field"><input
             type="password"
             name="pwd"
             required
             maxLength={20}
             value={form.confirmPwd}
             onChange={e => updateForm('confirmPwd', e.target.value)}
-          /></div>
+          /></p>
         </label>
-      </p>
-      <p>
+      </div>
+      <div>
         <label>
-          <div className="label-name">Adres e-mail:</div>
-          <div className="label-field"><input
+          <p className="label-name">Adres e-mail:</p>
+          <p className="label-field"><input
             type="email"
             name="email"
             required
             value={form.email}
             onChange={e => updateForm('email', e.target.value)}
-          /></div>
+          /></p>
         </label>
-      </p>
-      <p>
+      </div>
+      <div>
         <label>
-          <div className="label-name">Imię:</div>
-          <div className="label-field"><input
+          <p className="label-name">Imię:</p>
+          <p className="label-field"><input
             type="text"
             name="name"
             value={form.name}
             onChange={e => updateForm('name', e.target.value)}
-          /></div>
+          /></p>
         </label>
-      </p>
-      <p>
+      </div>
+      <div>
         <label>
-          <div className="label-name">Nazwisko:</div>
-          <div className="label-field"><input
+          <p className="label-name">Nazwisko:</p>
+          <p className="label-field"><input
             type="text"
             name="surname"
             value={form.surname}
             onChange={e => updateForm('surname', e.target.value)}
-          /></div>
+          /></p>
         </label>
-      </p>
-      <p className="btn-register-wrapper">
+      </div>
+      <div className="btn-register-wrapper">
         <input
           className="btn-register"
           type="submit"
           value="Zarejestruj"
         />
-      </p>
-      <p className="btn-register-wrapper">
+      </div>
+      <div className="btn-register-wrapper">
         <CloseBtn/>
-      </p>
+      </div>
     </form>
   );
 };

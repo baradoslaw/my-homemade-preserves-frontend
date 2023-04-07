@@ -59,42 +59,42 @@ export const LogIn = (props: Props) => {
   return (
     <form action="" className="log-in-form" onSubmit={logIn} style={{display: appContext === 'logging' ? 'block' : 'none'}}>
       <h2>Logowanie</h2>
-      <p>
+      <div>
         <label>
-          <div className="label-name">Login:</div>
-          <div className="label-field"><input
+          <p className="label-name">Login:</p>
+          <p className="label-field"><input
             type="text"
             name="login"
             required
             maxLength={20}
             value={form.login}
             onChange={e => updateForm('login', e.target.value)}
-          /></div>
+          /></p>
         </label>
-      </p>
-      <p>
+      </div>
+      <div>
         <label>
-          <div className="label-name">Hasło:</div>
-          <div className="label-field"><input
+          <p className="label-name">Hasło:</p>
+          <p className="label-field"><input
             type="password"
             name="pwd"
             required
             maxLength={20}
             value={form.pwd}
             onChange={e => updateForm('pwd', e.target.value)}
-          /></div>
+          /></p>
         </label>
-      </p>
-      <p className="btn-log-in-wrapper">
+      </div>
+      <div className="btn-log-in-wrapper">
         <input
           className="btn-log-in"
           type="submit"
           value="Zaloguj"
         />
-      </p>
-      <p className="btn-log-in-wrapper">
+      </div>
+      <div className="btn-log-in-wrapper">
         <CloseBtn/>
-      </p>
+      </div>
     </form>
   );
 };
