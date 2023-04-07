@@ -2,6 +2,7 @@ import React from 'react';
 
 import './Header.css';
 import {Logo} from "../Logo/Logo";
+import {HeaderBtn} from "../common/HeaderBtn";
 
 export const Header = () => {
   return (
@@ -9,7 +10,7 @@ export const Header = () => {
       <Logo/>
       <div className="btnWrapper">
         <div className="btn">Zaloguj</div>
-        <div className="btn">Zarejestruj</div>
+        <HeaderBtn text="Zarejestruj"/>
       </div>
     </header>
   );

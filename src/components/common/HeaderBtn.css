@@ -1,0 +1,16 @@
+.header-btn {
+    padding: 0 30px;
+    height: 50px;
+    width: 150px;
+    border-bottom: 4px solid #ec5514;
+    background-color: lightsalmon;
+    text-align: center;
+    font-size: 19px;
+    line-height: 50px;
+}
+
+.header-btn:active {
+    border-bottom-color: #a13402;
+    background-color: #f15921;
+    transition: 0.5s;
+}
