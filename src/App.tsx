@@ -14,7 +14,7 @@ function App() {
   return (
     <AppContext.Provider value={{appContext, setAppContext}}>
       <div className="App">
-        <Header/>
+        <Header setUser={setUser}/>
         <MainView/>
         <FormBackground/>
         <Register/>
