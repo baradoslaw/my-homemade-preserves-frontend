@@ -6,6 +6,7 @@ import {AppContext} from "../../contexts/app.context";
 interface Props {
   text: string;
   btnType: 'registering' | 'logging';
+  last?: 'last';
 }
 
 export const HeaderBtn = (props: Props) => {
@@ -16,6 +17,12 @@ export const HeaderBtn = (props: Props) => {
   };
 
   return (
-    <div className="header-btn" onClick={setAppContextFromLocalState}>{props.text}</div>
+    <div
+      className="header-btn"
+      onClick={setAppContextFromLocalState}
+      style={{borderRight: props.last !== 'last' ? "2px solid #ec5514" : 'none'}}
+    >
+      {props.text}
+    </div>
   );
 }

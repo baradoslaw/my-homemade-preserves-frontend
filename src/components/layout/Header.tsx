@@ -9,8 +9,8 @@ export const Header = () => {
     <header>
       <Logo/>
       <div className="btnWrapper">
-        <div className="btn">Zaloguj</div>
-        <HeaderBtn text="Zarejestruj" btnType="registering"/>
+        <HeaderBtn text="Zaloguj" btnType="logging"/>
+        <HeaderBtn text="Zarejestruj" btnType="registering" last="last"/>
       </div>
     </header>
   );

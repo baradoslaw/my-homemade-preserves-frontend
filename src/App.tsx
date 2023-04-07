@@ -5,6 +5,7 @@ import {MainView} from "./components/MainView/MainView";
 import {Register} from "./components/Register/Register";
 import {AppContext} from "./contexts/app.context";
 import {FormBackground} from "./components/layout/FormBackground";
+import {LogIn} from "./components/LogIn/LogIn";
 
 function App() {
   const [appContext, setAppContext] = useState('standard');
@@ -16,6 +17,7 @@ function App() {
         <MainView/>
         <FormBackground/>
         <Register/>
+        <LogIn/>
       </div>
     </AppContext.Provider>
   );

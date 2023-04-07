@@ -10,7 +10,7 @@
 }
 
 .header-btn:active {
-    border-bottom-color: #a13402;
+    border-color: #a13402;
     background-color: #f15921;
     transition: 0.5s;
 }

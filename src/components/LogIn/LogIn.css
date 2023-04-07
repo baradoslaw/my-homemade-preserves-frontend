@@ -1,0 +1,60 @@
+.log-in-form {
+    padding: 50px;
+    border: 5px solid burlywood;
+    border-radius: 10%;
+    position: fixed;
+    left: 30%;
+    right: 30%;
+    top: 15%;
+    width: 40%;
+    height: 70%;
+    background-color: bisque;
+}
+
+.log-in-form h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.log-in-form div {
+    margin-top: 10px;
+    bottom: 10px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.label-name {
+    width: 25%;
+    text-align: left;
+}
+
+.label-field {
+    width: 75%;
+    text-align: right;
+}
+
+.log-in-form input {
+    width: 250px;
+    height: 20px;
+}
+
+.btn-log-in-wrapper {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.btn-log-in-wrapper .btn-log-in {
+    margin-right: 50px;
+    border: 2px solid coral;
+    border-radius: 5%;
+    height: 40px;
+    width: 150px;
+    background-color: burlywood;
+    font-size: 15px;
+}
+
+.btn-log-in-wrapper .btn-log-in:active {
+    background-color: #dc9947;
+    border-color: #f15518;
+}
