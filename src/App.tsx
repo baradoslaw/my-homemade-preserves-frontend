@@ -9,6 +9,7 @@ import {LogIn} from "./components/LogIn/LogIn";
 
 function App() {
   const [appContext, setAppContext] = useState('standard');
+  const [user, setUser] = useState('');
 
   return (
     <AppContext.Provider value={{appContext, setAppContext}}>
@@ -17,7 +18,7 @@ function App() {
         <MainView/>
         <FormBackground/>
         <Register/>
-        <LogIn/>
+        <LogIn user={user} setUser={setUser}/>
       </div>
     </AppContext.Provider>
   );
