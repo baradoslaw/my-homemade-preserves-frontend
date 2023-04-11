@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './Header.css';
-import {Logo} from "../Logo/Logo";
 import {HeaderBtn} from "../common/HeaderBtn";
 
 interface Props {
@@ -11,7 +10,7 @@ interface Props {
 export const Header = (props: Props) => {
   return (
     <header>
-      <Logo/>
+      <div className="app-name">My Homemade Preserves</div>
       <div className="btnWrapper">
         <HeaderBtn text="Zaloguj" btnType="logging"/>
         <HeaderBtn text="Zarejestruj" btnType="registering" last="last"/>

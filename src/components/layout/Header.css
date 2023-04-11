@@ -1,13 +1,19 @@
 header {
-    height: 100px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
-    background-color: cornsilk;
+    background-color: #ffddac;
 }
 
 header div {
     height: 100%;
     display: inline-block;
+}
+
+.app-name {
+    padding-left: 25px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .btnWrapper {

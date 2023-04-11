@@ -1,12 +1,13 @@
 .wrapper {
     height: calc(100vh - 50px);
-    background-color: cyan;
+    background-color: burlywood;
 }
 
 main {
     margin: 0 100px;
+    padding: 20px;
     height: 100%;
-    background-color: darkcyan;
+    background-color: cornsilk;
 }
 
 .main-text {

@@ -1,0 +1,15 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    margin: 0 auto;
+}
+
+th {
+    width: 200px;
+}
+
+th.description {
+    width: 600px;
+}
