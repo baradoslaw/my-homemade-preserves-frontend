@@ -6,6 +6,7 @@ import {PreserveEntityReadyToSend} from 'types';
 
 import {AppContext} from "../../contexts/app.context";
 import {PreservesTable} from "../Preserves/PreservesTable";
+import {SinglePreserveDetails} from "../SinglePreserveDetails/SinglePreserveDetails";
 
 interface Props {
   user: string;
@@ -14,6 +15,7 @@ interface Props {
 export const MainView = (props: Props) => {
   const {appContext} = useContext(AppContext);
   const [items, setItems] = useState<PreserveEntityReadyToSend[] | null | 'loading'>(null);
+  const [singleItemView, setSingleItemView] = useState<PreserveEntityReadyToSend | null>(null);
 
   const refreshItems = async () => {
     setItems('loading');
@@ -58,7 +60,9 @@ export const MainView = (props: Props) => {
   return (
     <div className="wrapper">
       <main>
-        <PreservesTable preserves={items}/>
+        <SinglePreserveDetails preserve={singleItemView} setPreserve={setSingleItemView}/>
+        <h1>Twoje wyroby:</h1>
+        <PreservesTable preserves={items} setSinglePreserve={setSingleItemView}/>
       </main>
     </div>
   )

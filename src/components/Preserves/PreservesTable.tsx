@@ -6,6 +6,7 @@ import './PreservesTable.css';
 
 interface Props {
   preserves: PreserveEntityReadyToSend[];
+  setSinglePreserve: (value: PreserveEntityReadyToSend | null | ((prevVal: PreserveEntityReadyToSend | null) => PreserveEntityReadyToSend | null)) => void;
 }
 
 export const PreservesTable = (props: Props) => (
@@ -21,7 +22,7 @@ export const PreservesTable = (props: Props) => (
     <tbody>
     {
       props.preserves.map(preserve => (
-        <PreserveTableRow preserve={preserve} key={preserve.id}/>
+        <PreserveTableRow preserve={preserve} key={preserve.id} setSinglePreserve={props.setSinglePreserve}/>
       ))
     }
     </tbody>

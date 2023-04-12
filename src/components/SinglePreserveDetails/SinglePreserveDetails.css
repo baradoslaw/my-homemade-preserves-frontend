@@ -1,0 +1,43 @@
+.single-preserve-details-box {
+    padding: 50px;
+    border: 5px solid burlywood;
+    border-radius: 10%;
+    position: fixed;
+    left: 30%;
+    right: 30%;
+    top: 15%;
+    width: 40%;
+    height: 70%;
+    background-color: bisque;
+}
+
+h2 {
+    text-align: center;
+}
+
+.preserve-type {
+    margin: 10px 5px;
+}
+
+.preserve-description {
+    margin: 5px 5px 25px;
+}
+
+.field-name {
+    font-weight: bold;
+}
+
+.btn-close {
+    margin-right: 50px;
+    border: 2px solid coral;
+    border-radius: 5%;
+    height: 40px;
+    width: 150px;
+    background-color: burlywood;
+    font-size: 15px;
+}
+
+.btn-close:active {
+    background-color: #dc9947;
+    border-color: #f15518;
+}

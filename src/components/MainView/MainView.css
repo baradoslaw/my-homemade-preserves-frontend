@@ -13,3 +13,8 @@ main {
 .main-text {
     font-size: 30px;
 }
+
+h1 {
+    margin: 10px;
+    text-align: center;
+}
