@@ -1,0 +1,14 @@
+.btn-show-add-preserve {
+    margin: 25px 0;
+    border: 2px solid coral;
+    border-radius: 5%;
+    height: 40px;
+    width: 150px;
+    background-color: burlywood;
+    font-size: 15px;
+}
+
+.btn-show-add-preserve:active {
+    background-color: #dc9947;
+    border-color: #f15518;
+}

@@ -7,6 +7,8 @@ import {PreserveEntityReadyToSend} from 'types';
 import {AppContext} from "../../contexts/app.context";
 import {PreservesTable} from "../Preserves/PreservesTable";
 import {SinglePreserveDetails} from "../SinglePreserveDetails/SinglePreserveDetails";
+import {ShowAddPreserveBtn} from "../AddPreserve/ShowAddPreserveBtn";
+import {AddPreserveForm} from "../AddPreserve/AddPreserveForm";
 
 interface Props {
   user: string;
@@ -16,6 +18,7 @@ export const MainView = (props: Props) => {
   const {appContext} = useContext(AppContext);
   const [items, setItems] = useState<PreserveEntityReadyToSend[] | null | 'loading'>(null);
   const [singleItemView, setSingleItemView] = useState<PreserveEntityReadyToSend | null>(null);
+  const [addFormVisibility, setAddFormVisibility] = useState<boolean>(false);
 
   const refreshItems = async () => {
     setItems('loading');
@@ -61,8 +64,12 @@ export const MainView = (props: Props) => {
     <div className="wrapper">
       <main>
         <SinglePreserveDetails preserve={singleItemView} setPreserve={setSingleItemView}/>
+        <AddPreserveForm addFormVisibility={addFormVisibility} setAddFormVisibility={setAddFormVisibility} user={props.user} refreshItems={refreshItems}/>
         <h1>Twoje wyroby:</h1>
-        <PreservesTable preserves={items} setSinglePreserve={setSingleItemView}/>
+        <PreservesTable preserves={items} setSinglePreserve={setSingleItemView} refreshItems={refreshItems}/>
+        <div className="btn-wrapper">
+          <ShowAddPreserveBtn setAddFormVisibility={setAddFormVisibility}/>
+        </div>
       </main>
     </div>
   )

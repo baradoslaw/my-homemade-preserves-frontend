@@ -1,0 +1,64 @@
+.add-preserve-form {
+    padding: 50px;
+    border: 5px solid burlywood;
+    border-radius: 10%;
+    position: fixed;
+    left: 30%;
+    right: 30%;
+    top: 15%;
+    width: 40%;
+    height: 70%;
+    background-color: bisque;
+}
+
+.add-preserve-form h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.add-preserve-form p {
+    margin-top: 10px;
+    bottom: 10px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.label-name {
+    width: 25%;
+    text-align: left;
+}
+
+.label-field {
+    width: 75%;
+    text-align: right;
+}
+
+.add-preserve-form input, textarea, select {
+    width: 250px;
+    height: 20px;
+}
+
+textarea {
+    height: 60px;
+}
+
+.btn-add-preserve-wrapper {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.btn-add-preserve-wrapper .btn-add-preserve {
+    margin-right: 50px;
+    border: 2px solid coral;
+    border-radius: 5%;
+    height: 40px;
+    width: 150px;
+    background-color: burlywood;
+    font-size: 15px;
+}
+
+.btn-add-preserve-wrapper .btn-add-preserve:active {
+    background-color: #dc9947;
+    border-color: #f15518;
+}
