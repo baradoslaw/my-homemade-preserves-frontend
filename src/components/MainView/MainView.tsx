@@ -12,23 +12,24 @@ import {AddPreserveForm} from "../AddPreserve/AddPreserveForm";
 
 interface Props {
   user: string;
+  items: PreserveEntityReadyToSend[] | null | 'loading';
+  setItems: (value: PreserveEntityReadyToSend[] | null | 'loading' | ((prevVal: PreserveEntityReadyToSend[] | null | 'loading') => PreserveEntityReadyToSend[] | null | 'loading')) => void;
 }
 
 export const MainView = (props: Props) => {
   const {appContext} = useContext(AppContext);
-  const [items, setItems] = useState<PreserveEntityReadyToSend[] | null | 'loading'>(null);
   const [singleItemView, setSingleItemView] = useState<PreserveEntityReadyToSend | null>(null);
   const [addFormVisibility, setAddFormVisibility] = useState<boolean>(false);
 
   const refreshItems = async () => {
-    setItems('loading');
+    props.setItems('loading');
 
     const res = await fetch(`http://localhost:3001/preserve/for-user/${props.user}`, {
       credentials: "include",
     });
     const data = await res.json();
 
-    setItems(data);
+    props.setItems(data);
   };
 
   useEffect(() => {
@@ -39,7 +40,7 @@ export const MainView = (props: Props) => {
     }
   }, [appContext]);
 
-  if (items === null) {
+  if (props.items === null) {
     return (
       <div className="wrapper">
         <main>
@@ -51,7 +52,7 @@ export const MainView = (props: Props) => {
     );
   }
 
-  if (items === 'loading') {
+  if (props.items === 'loading') {
     return (
       <div className="wrapper">
         <main>
@@ -68,7 +69,7 @@ export const MainView = (props: Props) => {
         <SinglePreserveDetails preserve={singleItemView} setPreserve={setSingleItemView}/>
         <AddPreserveForm addFormVisibility={addFormVisibility} setAddFormVisibility={setAddFormVisibility} user={props.user} refreshItems={refreshItems}/>
         <h1>Twoje wyroby:</h1>
-        <PreservesTable preserves={items} setSinglePreserve={setSingleItemView} refreshItems={refreshItems}/>
+        <PreservesTable preserves={props.items} setSinglePreserve={setSingleItemView} refreshItems={refreshItems}/>
         <div className="btn-wrapper">
           <ShowAddPreserveBtn setAddFormVisibility={setAddFormVisibility}/>
         </div>
