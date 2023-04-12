@@ -23,7 +23,9 @@ export const MainView = (props: Props) => {
   const refreshItems = async () => {
     setItems('loading');
 
-    const res = await fetch(`http://localhost:3001/preserve/for-user/${props.user}`);
+    const res = await fetch(`http://localhost:3001/preserve/for-user/${props.user}`, {
+      credentials: "include",
+    });
     const data = await res.json();
 
     setItems(data);

@@ -28,6 +28,7 @@ export const AddPreserveForm = (props: Props) => {
         ...form,
         userId: props.user,
       }),
+      credentials: "include",
     });
 
     await props.refreshItems();

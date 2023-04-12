@@ -13,6 +13,7 @@ export const PreserveTableRow = (props: Props) => {
 
     await fetch(`http://localhost:3001/preserve/delete/${props.preserve.id}`, {
       method: 'DELETE',
+      credentials: "include",
     });
 
     await props.refreshItems();

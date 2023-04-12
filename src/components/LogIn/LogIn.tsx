@@ -35,9 +35,10 @@ export const LogIn = (props: Props) => {
 
       const data = await res.json();
 
-      if (data.id !== undefined) {
-        props.setUser(data.id);
-        // In future this will be exchanged with some authentication (maybe token?)
+      if (data.user.id !== undefined) {
+        props.setUser(data.user.id);
+        document.cookie = `sessionId=${data.sessionId}`;
+        document.cookie = `userId=${data.user.id}`;
         setAppContext('loggedIn');
       }
     } finally {
