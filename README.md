@@ -22,7 +22,7 @@ My Homemade Preserves is an app that allows to track your preserves. I made it a
 
 ### Installation
 
-1. Clone the repo
+1. Clone the repo. Types are connected with backend, to make them work properly enter path to types in backend in tsconfig.paths.json file.
    ```sh
    git clone https://github.com/baradoslaw/my-homemade-preserves-express-backend.git
    ```
