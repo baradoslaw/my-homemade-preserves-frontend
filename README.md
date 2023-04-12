@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+# my-homemade-preserves-frontend
+Frontend for My Homemade Preserves app.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-## Available Scripts
+My Homemade Preserves is an app that allows to track your preserves. I made it at the end of course to check my skills. You can find frontend for the app <a href="https://github.com/baradoslaw/my-homemade-preserves-express-backend">here</a>.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Built With
 
-### `npm test`
+* React
+* Express.js
+* TypeScript
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- GETTING STARTED -->
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/baradoslaw/my-homemade-preserves-express-backend.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Start the server development
+```sh
+   npm start
+   ```
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!-- FEATURES -->
+## FEATURES
+- Log in and out
+- Add and delete preserves
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Planned features:
+- Reminders for preserves
+- Current state of preserve
+- Changing name or description of preserve
